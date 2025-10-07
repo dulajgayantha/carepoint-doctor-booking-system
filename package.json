@@ -1,0 +1,27 @@
+{
+  "name": "carepoint-doctor-booking-system",
+  "version": "1.0.0",
+  "description": "A web application for booking doctor appointments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npm run server --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dulajgayantha/carepoint-doctor-booking-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dulajgayantha/carepoint-doctor-booking-system/issues"
+  },
+  "homepage": "https://github.com/dulajgayantha/carepoint-doctor-booking-system#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
